@@ -1,0 +1,58 @@
+/* Tokens. O papel de cada cor está explicado no README. */
+:root {
+  --c-cacao-950: #160a06;
+  --c-cacao-900: #24110a;
+  --c-cacao-800: #3a1c10;
+  --c-cacao-600: #6b3a22;
+  --c-caramel: #d9a15f;
+  --c-cream: #f6ecdc;
+  --c-cream-200: #ebdcc4;
+  --c-paper: #fffaf2;
+  --c-red: #b3122a;
+  --c-red-hover: #cf1a35;
+
+  --font-display: "Gloock", "Georgia", serif;
+  --font-body: "Hanken Grotesk", "Segoe UI", sans-serif;
+
+  --gutter: clamp(16px, 4vw, 64px);
+  --section-y: clamp(72px, 11vw, 168px);
+  --header-h: 60px;
+  --radius: 14px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-lift: 0 22px 44px -18px rgb(0 0 0 / 0.55);
+
+  /* Valores padrão: cada zona ou produto os redefine */
+  --bg: var(--c-cream);
+  --surface: var(--c-cream-200);
+  --ink: var(--c-cacao-900);
+  --muted: #5a4537;
+  --accent: var(--c-red);
+  --accent-ink: var(--c-paper);
+}
+
+.zone-dark {
+  --bg: var(--c-cacao-900);
+  --surface: var(--c-cacao-800);
+  --ink: var(--c-cream);
+  --muted: #d8c4ac;
+  background: var(--bg);
+  color: var(--ink);
+}
+.zone-cream {
+  --bg: var(--c-cream);
+  --surface: var(--c-cream-200);
+  --ink: var(--c-cacao-900);
+  --muted: #5a4537;
+  background: var(--bg);
+  color: var(--ink);
+}
+/* Mesmo tom do fundo das duas fotografias do encerramento */
+.zone-closing {
+  --bg: #1b0c06;
+  --surface: var(--c-cacao-800);
+  --ink: var(--c-cream);
+  --muted: #d8c4ac;
+  background: var(--bg);
+  color: var(--ink);
+}

@@ -1,0 +1,40 @@
+/* Entradas. Só escondem o conteúdo com JS ativo e sem preferência por movimento reduzido. */
+@media (prefers-reduced-motion: no-preference) {
+  /* clip-reveal sem itens recorta o filho: um alvo todo recortado nunca seria detectado como visível */
+  .js [data-reveal]:not([data-reveal="clip-reveal"]):not(:has([data-item])),
+  .js [data-reveal="clip-reveal"]:not(:has([data-item])) > *,
+  .js [data-reveal] [data-item] {
+    opacity: 0;
+    transform: var(--from, translateY(36px));
+    clip-path: var(--clip, none);
+    transition:
+      opacity 0.8s var(--ease-out),
+      transform 0.95s var(--ease-out),
+      clip-path 1.1s var(--ease-out);
+    transition-delay: calc(var(--i, 0) * 90ms);
+  }
+  [data-reveal="slide-left"] { --from: translateX(-56px); }
+  [data-reveal="slide-right"] { --from: translateX(56px); }
+  [data-reveal="scale-up"] { --from: scale(0.93); }
+  [data-reveal="clip-reveal"] { --from: none; --clip: inset(100% 0 0 0); --clip-end: inset(0); }
+
+  .js [data-reveal].is-in:not([data-reveal="clip-reveal"]):not(:has([data-item])),
+  .js [data-reveal="clip-reveal"].is-in:not(:has([data-item])) > *,
+  .js [data-reveal].is-in [data-item] {
+    /* Só clip-reveal termina com recorte: nos demais, ele cortaria sombras e o contorno de foco */
+    opacity: 1; transform: none; clip-path: var(--clip-end, none);
+  }
+
+  .scroll-cue-line { transform-origin: left; animation: cue 2.4s var(--ease-out) infinite; }
+  @keyframes cue { 0% { transform: scaleX(0); } 55%, 100% { transform: scaleX(1); } }
+}
+
+/* Volta da página de produto: nada de reanimar */
+.no-anim, .no-anim * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+.no-anim [data-reveal], .no-anim [data-reveal] > *, .no-anim [data-reveal] [data-item] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+  .card:hover, .card:active, .card:hover .card-photo .slot { transform: none; }
+}

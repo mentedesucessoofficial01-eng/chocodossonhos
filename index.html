@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ponto de Fusão: campanha conceitual com chocolates Hershey's</title>
+  <meta name="description" content="Dez sabores, uma experiência digital: projeto de portfólio que mostra como fotografia, vídeo e texto despertam desejo antes da primeira mordida.">
+  <meta name="theme-color" content="#160a06">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2324110a'/%3E%3Cpath d='M8 8h16v8c0 4-2 3-3 6s-3 3-4 0-2-1-4-1-5-1-5-5z' fill='%23f6ecdc'/%3E%3C/svg%3E">
+  <script>
+    document.documentElement.classList.add("js");
+    (function () {
+      var nav = performance.getEntriesByType("navigation")[0];
+      if (nav && nav.type === "back_forward" && "scrollRestoration" in history) history.scrollRestoration = "manual";
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div data-header></div>
+
+  <main id="conteudo">
+    <!-- 01 · Hero: área de vídeo + área de fotografia -->
+    <section class="hero zone-dark" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-film" data-reveal="fade-up"><div data-slot="hero-video"></div></div>
+      <div class="hero-copy" data-reveal="fade-up">
+        <p class="eyebrow" data-item>01 / Dez sabores, uma campanha</p>
+        <h1 class="hero-title" id="hero-title" data-item>Antes da primeira mordida, já&nbsp;começou.</h1>
+        <p class="hero-sub" data-item>A vontade nasce no brilho da foto, no fio de calda em câmera lenta, na frase que faz você imaginar o sabor. Escolha um dos dez e veja como isso acontece.</p>
+        <div class="cta-row" data-item>
+          <a class="btn btn--action btn--lg" href="#vitrine">Escolher meu sabor <span aria-hidden="true">↓</span></a>
+          <a class="btn btn--ghost btn--lg" data-wa>Quero um projeto assim</a>
+        </div>
+      </div>
+      <div class="hero-photo" data-reveal="slide-right"><div data-slot="hero-foto" data-eager></div></div>
+      <a class="scroll-cue" href="#universo"><span>Role</span><span class="scroll-cue-line" aria-hidden="true"></span></a>
+    </section>
+
+    <div class="marquee zone-dark" aria-hidden="true">
+      <p class="marquee-text" data-marquee>Ao leite · Meio amargo · Biscoito · Amendoim · Calda · Cacau · Morango · Ao leite · Meio amargo · Biscoito · Amendoim · Calda · Cacau · Morango</p>
+    </div>
+
+    <!-- 02 · Universo: coluna de mídia fixa enquanto os textos passam -->
+    <section class="universe zone-cream" id="universo" aria-labelledby="universo-title">
+      <div class="drip" data-drip aria-hidden="true" style="color:var(--c-cacao-950)">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none"><path fill="currentColor" d="M0,0 H1440 V38 C1400,38 1396,96 1362,96 C1330,96 1330,44 1290,44 C1240,44 1240,128 1196,128 C1152,128 1156,46 1110,46 C1060,46 1056,72 1020,72 C984,72 984,40 940,40 C880,40 880,112 836,112 C792,112 796,42 748,42 C690,42 690,84 650,84 C610,84 612,40 566,40 C510,40 510,136 462,136 C414,136 420,44 370,44 C320,44 320,76 284,76 C248,76 250,40 206,40 C156,40 156,104 116,104 C76,104 78,40 0,38 Z"/></svg>
+      </div>
+      <div class="universe-head" data-reveal="slide-left">
+        <p class="eyebrow" data-item>02 / O universo</p>
+        <h2 class="h-section" id="universo-title" data-item>Chocolate se escolhe com os sentidos. A razão só chega depois.</h2>
+      </div>
+      <div class="universe-grid">
+        <div class="universe-media">
+          <div class="universe-sticky">
+            <div class="universe-video" data-reveal="clip-reveal"><div data-slot="universo-video"></div></div>
+            <div class="universe-detail" data-reveal="scale-up"><div data-slot="universo-foto"></div></div>
+          </div>
+        </div>
+        <div class="universe-acts">
+          <article class="act" data-reveal="slide-right">
+            <span class="act-word" data-item>Olhar</span>
+            <p data-item>O brilho de uma superfície, a linha de um quadradinho, a sombra sobre o papel. Antes de qualquer argumento, a imagem já está fazendo o trabalho dela.</p>
+          </article>
+          <article class="act" data-reveal="fade-up">
+            <span class="act-word" data-item>Abrir</span>
+            <p data-item>Papel que estala, alumínio que gira, calda que escorre devagar. O vídeo entrega aquilo que a foto só consegue sugerir: o tempo da vontade.</p>
+          </article>
+          <article class="act" data-reveal="slide-left">
+            <span class="act-word" data-item>Provar</span>
+            <p data-item>Aqui ninguém prova nada de verdade. Mas, se a boca salivou um pouco, a campanha cumpriu o que prometeu: transformar pixels em vontade.</p>
+          </article>
+          <div class="timeline" data-reveal="fade-up">
+            <p class="eyebrow" data-item>Três datas deste mercado</p>
+            <ol>
+              <li data-item><strong data-count="1894" data-from="1860">1894</strong><span>Milton S. Hershey funda a Hershey Chocolate Company.</span></li>
+              <li data-item><strong data-count="1900" data-from="1860">1900</strong><span>Até o fim do ano, é vendida a primeira barra Hershey.</span></li>
+              <li data-item><strong data-count="1928" data-from="1860">1928</strong><span>H. B. Reese cria os Peanut Butter Cups.</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · Vitrine: os 10 produtos, gerados de js/data/products.js -->
+    <section class="showcase zone-dark" id="vitrine" aria-labelledby="vitrine-title">
+      <div class="drip" data-drip aria-hidden="true" style="color:var(--c-cream)">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none"><path fill="currentColor" d="M0,0 H1440 V50 C1380,50 1384,120 1330,120 C1280,120 1290,44 1230,44 C1170,44 1176,84 1130,84 C1084,84 1090,40 1030,40 C970,40 972,132 920,132 C868,132 880,46 816,46 C760,46 760,74 720,74 C680,74 684,40 620,40 C560,40 566,104 514,104 C462,104 470,42 408,42 C350,42 350,126 300,126 C250,126 258,48 196,48 C140,48 142,80 96,80 C52,80 50,44 0,44 Z"/></svg>
+      </div>
+      <div class="sec-head" data-reveal="fade-up">
+        <p class="eyebrow" data-item>03 / A vitrine</p>
+        <h2 class="h-section" id="vitrine-title" data-item>Dez formas de ceder.</h2>
+        <p class="lede" data-item>Escolha pelo humor de hoje. Cada sabor abre uma apresentação própria, e o retorno traz você de volta ao ponto exato em que parou.</p>
+      </div>
+      <ul class="showcase-grid" data-showcase></ul>
+    </section>
+
+    <!-- 04 · Apresentações individuais: índice das 10 páginas de produto -->
+    <section class="presentations zone-dark" id="apresentacoes" aria-labelledby="apresentacoes-title">
+      <div class="sec-head" data-reveal="fade-up">
+        <p class="eyebrow" data-item>04 / As apresentações</p>
+        <h2 class="h-section" id="apresentacoes-title" data-item>Cada sabor tem o seu palco.</h2>
+      </div>
+      <ol class="index-list" data-index></ol>
+    </section>
+
+    <!-- 05 · Experiência sensorial: único lugar do site com receitas -->
+    <section class="experience zone-cream" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="drip" data-drip aria-hidden="true" style="color:var(--c-cacao-900)">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none"><path fill="currentColor" d="M0,0 H1440 V38 C1400,38 1396,96 1362,96 C1330,96 1330,44 1290,44 C1240,44 1240,128 1196,128 C1152,128 1156,46 1110,46 C1060,46 1056,72 1020,72 C984,72 984,40 940,40 C880,40 880,112 836,112 C792,112 796,42 748,42 C690,42 690,84 650,84 C610,84 612,40 566,40 C510,40 510,136 462,136 C414,136 420,44 370,44 C320,44 320,76 284,76 C248,76 250,40 206,40 C156,40 156,104 116,104 C76,104 78,40 0,38 Z"/></svg>
+      </div>
+      <div class="sec-head" data-reveal="slide-left">
+        <p class="eyebrow" data-item>05 / A experiência</p>
+        <h2 class="h-section" id="experiencia-title" data-item>Um bom anúncio não grita. Dá água na boca.</h2>
+      </div>
+      <div class="exp-grid">
+        <figure class="exp exp--film" data-reveal="clip-reveal"><div data-slot="experiencia-calda"></div></figure>
+        <div class="exp-note exp-note--a" data-reveal="slide-right">
+          <h3 class="exp-title" data-item>Primeiro, o brilho.</h3>
+          <p data-item>O fio desce devagar e decide sozinho por onde vai. Antes de qualquer palavra, o olhar já acompanhou o caminho até a borda do prato.</p>
+        </div>
+        <div class="exp-pair">
+          <article class="exp-card" data-reveal="fade-up">
+            <figure class="exp" data-item><div data-slot="experiencia-cookies"></div></figure>
+            <h3 class="exp-title" data-item>Depois, o contraste.</h3>
+            <p data-item>Creme claro e biscoito escuro, em camadas à vista. O vidro deixa o contraste trabalhar sozinho.</p>
+          </article>
+          <article class="exp-card exp-card--low" data-reveal="fade-up">
+            <figure class="exp" data-item><div data-slot="experiencia-morango"></div></figure>
+            <h3 class="exp-title" data-item>Um respiro cor-de-rosa.</h3>
+            <p data-item>Morango, creme e raspas de chocolate: a mesma vontade, em uma versão mais leve.</p>
+          </article>
+        </div>
+        <div class="exp-note exp-note--b" data-reveal="slide-left">
+          <h3 class="exp-title" data-item>E o gesto por trás de tudo.</h3>
+          <p data-item>O cacau cai pela peneira como se o tempo tivesse diminuído. É o lado artesanal, o que faz a cena parecer feita à mão.</p>
+        </div>
+        <figure class="exp exp--film exp--end" data-reveal="clip-reveal"><div data-slot="experiencia-cacau"></div></figure>
+      </div>
+      <div class="recipes" data-reveal="fade-up">
+        <h3 class="recipes-title" data-item>Quatro ideias para levar à cozinha</h3>
+        <div class="accordion" data-item>
+          <details name="receitas"><summary>Calda sobre o bolo</summary><p>Derreta o chocolate em banho-maria até ficar liso e despeje sobre o bolo ainda morno, do centro para as bordas. Termine com raspas de chocolate.</p></details>
+          <details name="receitas"><summary>Creme com biscoito</summary><p>Em um recipiente de vidro, alterne creme claro e biscoito de chocolate quebrado. Leve à geladeira antes de servir e finalize com mais pedaços por cima.</p></details>
+          <details name="receitas"><summary>Camadas de morango</summary><p>Monte camadas de bolo de chocolate esfarelado, creme e fatias de morango. Coloque um morango inteiro no topo e espalhe as raspas de chocolate.</p></details>
+          <details name="receitas"><summary>Cacau peneirado</summary><p>Passe o cacau em pó pela peneira antes de usar. Isso ajuda a desfazer os grumos e a distribuir o pó por igual, na massa ou sobre a sobremesa pronta.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · Encerramento: a virada de chocolate para o serviço de criação de sites -->
+    <section class="closing zone-closing" id="contato" aria-labelledby="contato-title">
+      <div class="drip" data-drip aria-hidden="true" style="color:var(--c-cream)">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none"><path fill="currentColor" d="M0,0 H1440 V50 C1380,50 1384,120 1330,120 C1280,120 1290,44 1230,44 C1170,44 1176,84 1130,84 C1084,84 1090,40 1030,40 C970,40 972,132 920,132 C868,132 880,46 816,46 C760,46 760,74 720,74 C680,74 684,40 620,40 C560,40 566,104 514,104 C462,104 470,42 408,42 C350,42 350,126 300,126 C250,126 258,48 196,48 C140,48 142,80 96,80 C52,80 50,44 0,44 Z"/></svg>
+      </div>
+      <div class="stage" data-reveal="fade-up">
+        <div class="stage-media" data-slot="encerramento"></div>
+        <div class="stage-copy">
+          <p class="eyebrow" data-item>06 / O verdadeiro produto</p>
+          <h2 class="closing-title" id="contato-title" data-item>Se deu vontade, o site funcionou.</h2>
+          <p class="lede" data-item>Agora imagine essa mesma vontade apontada para o que você vende. É para isso que este projeto existe.</p>
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <h3 class="faq-title" data-reveal="fade-up">Antes que você pergunte.</h3>
+        <div class="accordion" data-reveal="fade-up">
+          <details name="duvidas"><summary>Este é o site oficial da Hershey's?</summary><p>Não. É uma campanha conceitual de portfólio, sem vínculo com a fabricante. Os produtos servem de referência para mostrar o que um site bem pensado consegue fazer.</p></details>
+          <details name="duvidas"><summary>Posso comprar chocolate por aqui?</summary><p>Não. Não existe carrinho, pagamento nem entrega. O único contato disponível é para quem se interessa por criação de sites.</p></details>
+          <details name="duvidas"><summary>Meu negócio não vende chocolate. Isso serve para mim?</summary><p>Serve a lógica: entender o que desperta desejo no seu mercado e organizar imagem, texto e navegação em torno disso. A identidade visual é criada para o seu caso, e não copiada deste projeto.</p></details>
+          <details name="duvidas"><summary>O site funciona bem no celular?</summary><p>Esta é a premissa do projeto: ele foi pensado primeiro para a tela pequena, com áreas de toque confortáveis, carregamento sob demanda e respeito a quem prefere menos movimento.</p></details>
+          <details name="duvidas"><summary>Quanto custa e quanto tempo leva?</summary><p>Depende do tamanho do projeto e dos materiais que você já tem. A conversa pelo WhatsApp serve justamente para entender o seu caso antes de falar em valores e prazos.</p></details>
+        </div>
+      </div>
+
+      <div class="stage stage--cta" data-reveal="fade-up">
+        <div class="stage-media" data-slot="chamada"></div>
+        <div class="stage-copy">
+          <h2 class="stage-title" data-item>Vamos falar sobre o seu projeto?</h2>
+          <div class="cta-row" data-item>
+            <a class="btn btn--action btn--lg" data-wa>Quero meu site</a>
+            <a class="btn btn--ghost btn--lg" data-wa>Solicitar informações</a>
+          </div>
+          <p class="cta-note" data-cta-note data-item></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+  <noscript><p class="noscript">Este site precisa de JavaScript para exibir a vitrine e as animações.</p></noscript>
+  <script type="module" src="js/pages/home.js"></script>
+</body>
+</html>
