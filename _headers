@@ -5,6 +5,6 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
-# Fotos e vídeos mudam de nome quando mudam: cache longo
+# Trocar uma mídia mantém o nome do arquivo: cache de um dia
 /media/*
-  Cache-Control: public, max-age=2592000
+  Cache-Control: public, max-age=86400
